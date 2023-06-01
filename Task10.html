@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Open the Console to check out the different Javascript functions</h1>
+    <script>
+      const numbers = [1, 2, 3, 4, 5];
+
+      const doubledNumbers = numbers.map((num) => num * 2);
+      console.log("map():", doubledNumbers);
+
+      const evenNumbers = numbers.filter((num) => num % 2 === 0);
+      console.log("filter():", evenNumbers);
+
+      const sum = numbers.reduce((accumulator, num) => accumulator + num, 0);
+      console.log("reduce():", sum);
+
+      console.log("forEach():");
+      numbers.forEach((num) => console.log(num));
+
+      const greaterThanThree = numbers.find((num) => num > 3);
+      console.log("find():", greaterThanThree);
+
+      const hasGreaterThanFour = numbers.some((num) => num > 4);
+      console.log("some():", hasGreaterThanFour);
+
+      const allGreaterThanZero = numbers.every((num) => num > 0);
+      console.log("every():", allGreaterThanZero);
+
+      const includesThree = numbers.includes(3);
+      console.log("includes():", includesThree);
+
+      const unsortedNumbers = [3, 1, 5, 2, 4];
+      const sortedNumbers = unsortedNumbers.sort();
+      console.log("sort():", sortedNumbers);
+
+      const reversedNumbers = numbers.reverse();
+      console.log("reverse():", reversedNumbers);
+    </script>
+  </body>
+</html>
